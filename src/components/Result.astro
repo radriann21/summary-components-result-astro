@@ -1,0 +1,63 @@
+---
+
+---
+
+<article class="result-container">
+  <h3 class="card-title">Your Result</h3>
+
+  <div class="score">
+    <h2>76</h2>
+    <span>of 100</span>
+  </div>
+
+  <section class="info">
+    <h3>Great</h3>
+    <p>
+      You scored higher than 65% of the people
+      who have taken these tests.
+    </p>
+  </section>
+</article>
+
+
+<style>
+  article.result-container {
+    border-radius: 16px;
+    padding: 2.5rem;
+    background-color: var(--primary-cobalt-blue);
+    width: 340px;
+    height: 380px;
+    text-align: center;
+  }
+  h3 {
+    font-size: 22px;
+  }
+  h3.card-title {
+    color: var(--neutral-light-lavender);
+  }
+  p {
+    margin-top: .5rem;
+    font-size: 14px;
+    padding: 0 2rem;
+    line-height: 1.4;
+    font-weight: 700;
+    color: var(--neutral-light-lavender);
+  }
+  div.score {
+    margin: 2rem auto;
+    padding: 2rem 3rem;
+    border-radius: 50%;
+    width: fit-content;
+    h2 {
+      font-size: 38px;
+    }
+    span {
+      font-size: 13px;
+      color: var(--neutral-light-lavender);
+    }
+    background: linear-gradient(to bottom, 
+    hsla(256, 72%, 46%, 1), 
+    hsla(241, 72%, 46%, 0) 
+    )
+  }
+</style>
