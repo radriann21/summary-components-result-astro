@@ -9,7 +9,10 @@ const { category, score, icon } = Astro.props;
 ---
 
 <li class={category.toLowerCase()}>
-  <h3>{category}</h3>
+  <div class="category-container"> 
+    <img src={icon} alt={category}>
+    <h3>{category}</h3>
+  </div>
   <div class="score-container">
     <span class="score">{score}</span>
     /
@@ -24,10 +27,18 @@ const { category, score, icon } = Astro.props;
     padding: 1rem; 
     border-radius: 8px;
     margin: 1rem 0;
-    font-size: 14px;
+    font-size: 13px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+  
+    div.category-container {
+      display: flex;
+      align-items: center;
+      img {
+        margin-right: .6rem;
+      }
+    }
   }
 
   li.reaction {
