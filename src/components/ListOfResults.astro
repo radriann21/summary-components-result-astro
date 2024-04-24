@@ -1,1 +1,21 @@
+---
+import data from '../data.json';
+import ResultCard from './ResultCard.astro';
+---
 
+<ul class="results-list">
+  {
+    data.map((el) => 
+      <ResultCard 
+        category={el.category} 
+        score={el.score} 
+      />
+    )
+  }
+</ul>
+
+<style>
+  ul.results-list {
+    margin-top: 1rem;
+  }
+</style>

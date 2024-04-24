@@ -1,12 +1,14 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Result from '../components/Result.astro';
+import Summary from '../components/Summary.astro';
 import data from '../data.json';
 ---
 
 <Layout title="Summary Component">
 	<main>
 		<Result />
+		<Summary />
 	</main>
 </Layout>
 
@@ -17,21 +19,6 @@ import data from '../data.json';
 		position: relative;
 		display: flex;
 		align-items: center;	
-		justify-content: center
-	}
-
-	h1 {
-		font-size: 4rem;
-		font-weight: 700;
-		line-height: 1;
-		text-align: center;
-		margin-bottom: 1em;
-	}
-
-	div {
-		width: 320px;
-		height: 230px;
-		background-color: red;
-		border-radius: 12px;	
+		justify-content: center;
 	}
 </style>

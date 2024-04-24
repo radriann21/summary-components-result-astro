@@ -1,0 +1,59 @@
+---
+interface Props {
+  category: string;
+  score: number;
+  icon?: string;
+}
+
+const { category, score, icon } = Astro.props;
+---
+
+<li class={category.toLowerCase()}>
+  <h3>{category}</h3>
+  <div class="score-container">
+    <span class="score">{score}</span>
+    /
+    <span>100</span>
+  </div>
+</li>
+
+<style>
+  li {
+    list-style: none;
+    color: blue;
+    padding: 1rem; 
+    border-radius: 8px;
+    margin: 1rem 0;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  li.reaction {
+    background-color: hsl(0, 100%, 67%, 0.3);
+    color: var(--primary-light-red);
+  }
+
+  li.memory {
+    background-color: hsl(39, 100%, 56%, 0.3);
+    color: var(--primary-orangey-yellow);
+  }
+
+  li.verbal {
+    background-color: hsl(166, 100%, 37%, 0.3);
+    color: var(--primary-green-teal);
+  }
+
+  li.visual {
+    background-color: hsl(234, 85%, 45%, 0.3);
+    color: var(--primary-cobalt-blue);
+  }
+
+  div.score-container {
+    color: var(--neutral-dark-gray-blue);
+    span.score {
+      font-weight: 700;
+    }
+  }
+</style>

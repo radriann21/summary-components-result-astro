@@ -1,0 +1,21 @@
+---
+import ListOfResults from "./ListOfResults.astro";
+---
+
+<article class="result-container">
+  <h2 class="card-title">Summary</h2>
+  <ListOfResults />
+</article>
+
+<style>
+  article {
+    border-radius: 16px;
+    padding: 2.5rem;
+    width: 340px;
+    height: 410px;
+    box-shadow: 1px 1px 28px -9px rgba(0,0,0,0.75);
+  }
+  h2.card-title {
+    color: var(--neutral-dark-gray-blue);
+  }
+</style>
