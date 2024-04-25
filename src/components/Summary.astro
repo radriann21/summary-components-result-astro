@@ -5,17 +5,33 @@ import ListOfResults from "./ListOfResults.astro";
 <article class="result-container">
   <h2 class="card-title">Summary</h2>
   <ListOfResults />
+  <button>Continue</button>
 </article>
 
 <style>
   article {
     border-radius: 16px;
-    padding: 2.5rem;
+    padding: 2.2rem;
     width: 340px;
     height: 410px;
     box-shadow: 1px 1px 28px -9px rgba(0,0,0,0.75);
   }
   h2.card-title {
     color: var(--neutral-dark-gray-blue);
+  }
+  button {
+    width: 100%;
+    padding: .8rem;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    background-color: var(--neutral-dark-gray-blue);
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color .3s ease;
+  }
+  button:hover {
+    background-color: var(--primary-cobalt-blue);
   }
 </style>

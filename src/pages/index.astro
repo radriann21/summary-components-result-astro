@@ -2,7 +2,6 @@
 import Layout from '../layouts/Layout.astro';
 import Result from '../components/Result.astro';
 import Summary from '../components/Summary.astro';
-import data from '../data.json';
 ---
 
 <Layout title="Summary Component">
@@ -20,5 +19,10 @@ import data from '../data.json';
 		display: flex;
 		align-items: center;	
 		justify-content: center;
+	}
+	@media (width < 510px) {
+		main {
+			flex-direction: column;
+		}
 	}
 </style>
