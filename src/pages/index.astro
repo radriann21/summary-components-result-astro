@@ -14,13 +14,13 @@ import Summary from '../components/Summary.astro';
 <style>
 	main {
 		max-width: 100%;
-		min-height: 90vh;
+		min-height: 100vh;
 		position: relative;
 		display: flex;
 		align-items: center;	
 		justify-content: center;
 	}
-	@media (width < 510px) {
+	@media (width <= 510px) {
 		main {
 			flex-direction: column;
 		}
